@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws Exception {
 // los metodos estaticos pueden  llamar solo a metodos estaticos
         int n= 5;
         int resultadoFinal = factorial(n);
@@ -16,4 +16,14 @@ public class App {
     System.out.println("Calcular factorial de: "+ n + "* factorial(" + (n-1) + " -1)");
     return resultado;
     }
+
+    EjerciciosRecurcivos e = new EjerciciosRecurcivos ();
+    int fibo = e.fibonacci (5);
+    
+    
+    
+    
+   
+    
+    
 }
