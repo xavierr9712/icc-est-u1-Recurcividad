@@ -32,5 +32,8 @@ public class EjerciciosRecurcivos {
 
 
     }
-    
+    public int getPotencia (int base, int exponete){
+        return 0;
+
+    }
 }
