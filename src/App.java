@@ -7,7 +7,10 @@ public class App {
         EjerciciosRecurcivos e = new EjerciciosRecurcivos ();
         int fibo = e.fibonacci (5);
         System.out.println(fibo);
-        
+        int getp = e.getPotencia(3,2);
+        System.out.println(getp);
+        int sumad = e.sumaDigitos(422);
+        System.out.println(sumad);
     }
    public static int  factorial(int n){
     if(n==0){

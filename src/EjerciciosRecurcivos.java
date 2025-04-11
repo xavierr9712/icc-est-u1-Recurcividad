@@ -32,8 +32,35 @@ public class EjerciciosRecurcivos {
 
 
     }
-    public int getPotencia (int base, int exponete){
-        return 0;
+    public int getPotencia (int base, int exponente){
+        if (exponente == 0) {
+            return 1;
+        } else {
+            return base * getPotencia(base, exponente - 1);
+        }
+        // if (exponente == 0) {
+        //     return 1;
+        // }
+        
+        // else if (exponente == 1) {
+        //     return base;
+        // }
+        
+        // else {
+        //     return base * getPotencia(base, exponente - 1);
+        // }
+    }    
+        
+    public int sumaDigitos (int n ) {
+
+        if (n < 10) {
+            return n;
+        } else {
+            int ultimoDigito = n % 10;
+            int restoDelNumero = n / 10;
+            return ultimoDigito + sumaDigitos(restoDelNumero);
+        }
 
     }
+    
 }
