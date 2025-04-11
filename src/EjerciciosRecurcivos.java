@@ -38,6 +38,7 @@ public class EjerciciosRecurcivos {
         } else {
             return base * getPotencia(base, exponente - 1);
         }
+        // otra forma 
         // if (exponente == 0) {
         //     return 1;
         // }
@@ -60,7 +61,24 @@ public class EjerciciosRecurcivos {
             int restoDelNumero = n / 10;
             return ultimoDigito + sumaDigitos(restoDelNumero);
         }
-
     }
-    
+    public void imprimirDescendente(int n) {
+        if (n >= 1) {
+            System.out.print(n + " ");
+            imprimirDescendente(n - 1);
+
+        }    
+    } 
+    public int reverso(int n) {
+        return reversoAuxiliar(n, 0);
+    }
+
+    private int reversoAuxiliar(int n, int acumulador) {
+        if (n == 0) {
+            return acumulador;
+        }
+        int ultimoDigito = n % 10;
+        int restoDelNumero = n / 10;
+        return reversoAuxiliar(restoDelNumero, acumulador * 10 + ultimoDigito);
+    }
 }
